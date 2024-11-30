@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0077cc;
+}
+
+/* Ticker Grid */
+#ticker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+/* Stock Box */
+.stock-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fafafa;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stock-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stock-box h2 {
+  margin: 0;
+  color: #0077cc;
+}
+
+.stock-box p {
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+
+/* Price Change Colors */
+.dark-red {
+  color: #a00;
+}
+
+.red {
+  color: #d9534f;
+}
+
+.gray {
+  color: #888;
+}
+
+.green {
+  color: #5cb85c;
+}
+
+.dark-green {
+  color: #2a9d8f;
+}
+
+/* Flash Effects */
+.red-flash {
+  animation: flash-red 0.5s ease;
+}
+
+.green-flash {
+  animation: flash-green 0.5s ease;
+}
+
+.gray-flash {
+  animation: flash-gray 0.5s ease;
+}
+
+@keyframes flash-red {
+  0% {
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes flash-green {
+  0% {
+    background-color: rgba(0, 255, 0, 0.2);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes flash-gray {
+  0% {
+    background-color: rgba(128, 128, 128, 0.2);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+/* Form Styles */
+#add-ticker-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#new-ticker {
+  padding: 10px;
+  font-size: 1em;
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  background-color: #0077cc;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.remove-btn {
+  margin-top: 10px;
+  background-color: #d9534f;
+}
+
+.remove-btn:hover {
+  background-color: #c9302c;
+}
+
+/* Counter Styles */
+#counter {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 20px;
+  color: #555;
+}
+.title {
+    text-align: center;
+    font-size: 2em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.center-text {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
